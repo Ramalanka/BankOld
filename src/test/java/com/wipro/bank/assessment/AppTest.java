@@ -30,6 +30,9 @@ public class AppTest {
 		assertNotNull(acc);
 		assertEquals("acc3",acc.getUserName());
 		assertNotEquals(App.accounts.get(2).getUserName(),acc.getUserName());
+		
+		assertEquals(3,acc.getAccountID());
+		assertNotEquals(App.accounts.get(2).getAccountID(),acc.getAccountID());
 	}	
 	
 //	@Test
